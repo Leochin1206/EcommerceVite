@@ -405,6 +405,25 @@ button.prev:hover, button.next:hover {
   text-align: justify;
   margin: 0;
 }
+
+.btnEnviar {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .btnEnviar:hover {
+    background-color: #333;
+  }
+
+  .btnEnviar:active {
+    background-color: #555;
+  }
 /*End - SOBRE NOS*/
 
 /* CSS dos Componentes do Projeto - Utilize o inspecionar elementos antes de modificar os valores */
