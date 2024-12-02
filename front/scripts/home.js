@@ -35,7 +35,7 @@ nextBtn1.addEventListener('click', () => {
 });
 
 prevBtn1.addEventListener('click', () => {
-  scrollAmount1 -= cardWidth; // Retrocede um card
+  scrollAmount1 -= cardWidth; // Retrocede um card bn 
   if (scrollAmount1 < 0) {
     scrollAmount1 = 0;
   }
