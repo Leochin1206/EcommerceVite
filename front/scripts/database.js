@@ -177,7 +177,7 @@ export const database = [ /* "Banco de dados" de produtos comercializados no sit
     },
     {
         codigoProduto:12,
-        tituloProduto:"Toyora Corolla 2019", 
+        tituloProduto:"Toyota Corolla 2019", 
         preco: 103700.00, 
         descricao:"O Toyota Corolla 2019 é um sedã que se destaca pela confiabilidade, conforto e eficiência, ideal para quem busca um carro de alto desempenho e baixo custo de manutenção. Equipado com motor 1.8 e câmbio automático CVT, oferece uma condução suave e econômica, perfeita para o dia a dia e viagens. Seu design elegante, com linhas fluidas e uma frente imponente, transmite sofisticação e modernidade. No interior, o Corolla 2019 é espaçoso e bem acabado, com recursos tecnológicos de ponta e uma experiência de direção tranquila e segura, consolidando-se como uma das opções mais renomadas no segmento.",
         imagemProduto: {
@@ -209,7 +209,7 @@ export const database = [ /* "Banco de dados" de produtos comercializados no sit
     },
     { 
         codigoProduto:14,
-        tituloProduto:"Toyora Corolla 2019", 
+        tituloProduto:"Toyota Corolla 2019", 
         preco: 103700.00, 
         descricao:"O Toyota Corolla 2019 é um sedã que se destaca pela confiabilidade, conforto e eficiência, ideal para quem busca um carro de alto desempenho e baixo custo de manutenção. Equipado com motor 1.8 e câmbio automático CVT, oferece uma condução suave e econômica, perfeita para o dia a dia e viagens. Seu design elegante, com linhas fluidas e uma frente imponente, transmite sofisticação e modernidade. No interior, o Corolla 2019 é espaçoso e bem acabado, com recursos tecnológicos de ponta e uma experiência de direção tranquila e segura, consolidando-se como uma das opções mais renomadas no segmento.",
         imagemProduto: {
@@ -497,7 +497,7 @@ export const database = [ /* "Banco de dados" de produtos comercializados no sit
     },
     { 
         codigoProduto:32,
-        tituloProduto:"Toyora Corolla 2019", 
+        tituloProduto:"Toyota Corolla 2019", 
         preco: 103700.00, 
         descricao:"O Toyota Corolla 2019 é um sedã que se destaca pela confiabilidade, conforto e eficiência, ideal para quem busca um carro de alto desempenho e baixo custo de manutenção. Equipado com motor 1.8 e câmbio automático CVT, oferece uma condução suave e econômica, perfeita para o dia a dia e viagens. Seu design elegante, com linhas fluidas e uma frente imponente, transmite sofisticação e modernidade. No interior, o Corolla 2019 é espaçoso e bem acabado, com recursos tecnológicos de ponta e uma experiência de direção tranquila e segura, consolidando-se como uma das opções mais renomadas no segmento.",
         imagemProduto: {
