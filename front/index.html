@@ -167,5 +167,42 @@
       <div class="DireitosReservados">
         <p>© Campinas, SP - 2024 Leonardo Albergoni Viana - Todos os direitos reservados.</p>
       </div>
+      
+      <script>
+        let currentId = 1;
+
+        async function fetchProduct(id) {
+            const response = await fetch(`http://127.0.0.1:8000/api/produtos/${id}`);
+            console.log('Status da resposta:', response.status);
+            if (!response.ok) throw new Error("Produto não encontrado");
+
+            try {
+                const response = await fetch(`http://127.0.0.1:8000/api/produtos/${id}`);
+                if (!response.ok) throw new Error("Produto não encontrado");
+
+                const produto = await response.json();
+
+                document.getElementById("id").value = produto.id;
+                document.getElementById("tituloProduto").value = produto.tituloProduto;
+                document.getElementById("preco").value = produto.preco;
+                document.getElementById("descricao").value = produto.descricao;
+                document.getElementById("imgProduto").value = produto.imgProduto;
+                document.getElementById("catProduto").value = produto.catProduto;
+                document.getElementById("classProduto").value = produto.classProduto;
+                document.getElementById("exibirHome").value = produto.exibirHome;
+
+                const imageContainer = document.getElementById("imageContainer");
+                { console.log("Imagem:zzz", produto.imgProduto) }
+                imageContainer.innerHTML = produto.imgProduto
+                    ? `<img src="http://127.0.0.1:8000/${produto.imgProduto}" alt="Imagem do Produto">`
+                    : "<p>Sem imagem</p>";
+            } catch (error) {
+                console.error("Erro:", error);
+                alert("Não foi possível carregar os dados do produto.");
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", () => fetchProduct(currentId));
+    </script>
   </body>
 </html>
