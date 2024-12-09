@@ -23,7 +23,7 @@ export function loadProducts(productList, load) {
           </h4>
         </div>
         <a href="./product.html">
-        <button id="${produto.codigoProduto}" class="product-card-btn">BUY</button>
+        <button id="${produto.codigoProduto}" class="product-card-btn">Comprar</button>
         </a>
       </div>`;
     load.innerHTML += html;

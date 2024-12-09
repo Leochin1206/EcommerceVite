@@ -1,273 +1,165 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <!-- Configurações da página -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Belai Veículos - Encontre o carro dos seus sonhos em Campinas-SP" />
+    <meta name="keywords" content="carros, veículos, Campinas, compra, venda, automóveis" />
+    <meta name="author" content="Leonardo Albergoni Viana" />
+    <title>Belai Veículos</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <script src="./scripts/payment.js" type="module" defer></script>
+    <link rel="shortcut icon" href="./images/car.png" type="image/png" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Belai Veículos</title>
-  <link rel="stylesheet" href="./styles/styles.css" />
-  <script src="./scripts/payment.js" type="module" defer></script>
-  <link rel="shortcut icon" type="imagex/png" href="./images/car.png">
-</head>
-
-<body>
-  <header>
-    <div class="HeaderInfos">
-      <p>Campinas - SP</p>
-      <p>Localização - Av. John Boyd Dunlop, 858</p>
-      <p>Precisa de ajuda?</p>
-    </div>
-
-    <div class="HeaderPesquisa">
-      <a href="index.html">
-        <img src="./images/logoBLV.jpg" class="Logo"/>
-      </a>
-
-      <div class="BarraDePesquisa">
-        <input type="text" name="search" id="search" placeholder="Qual o Carro dos seus Sonhos?" />
+  <body>
+    <!-- Cabeçalho do Site -->
+    <header>
+      <!-- Informações principais -->
+      <div class="HeaderInfos">
+        <p>Campinas - SP</p>
+        <p>Localização - Rua Lima Barreto, 322 - Jardim Amanda I</p>
+        <a href="falaConosco.html"><p>Precisa de ajuda?</p></a>
       </div>
 
-      <div class="IconesPesquisa">
-        <img src="./images/coracaoLogo.png" alt="Coração" />
-        <img src="./images/perfil-de-usuario.png" alt="Perfil" />
-        <a href="checkout.html">
-          <img src="./images/carrinho.png" alt="Carrinho" />
+      <!-- Pesquisa e Navegação -->
+      <div class="HeaderPesquisa">
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="./images/logoBLV.png" class="Logo" alt="Logo Belai Veículos"/>
         </a>
+        <!-- Barra de pesquisa -->
+        <div class="BarraDePesquisa">
+          <input type="text" name="search" id="search" placeholder="Qual o Carro dos seus Sonhos?" />
+        </div>
+        <!-- Ícones interativos -->
+        <div class="IconesPesquisa">
+          <img src="./images/coracaoLogo.png" alt="Favoritos" />
+          <img src="./images/perfil-de-usuario.png" alt="Perfil" />
+          <a href="checkout.html">
+            <img src="./images/carrinho.png" alt="Carrinho de Compras" />
+          </a>
+        </div>
       </div>
-    </div>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="adm.html">Adm</a>
-      <a href="products.html">Products</a>
-      <a href="sobreNos.html">Sobre Nós</a>
-      <a href="falaConosco.html">Fale Conosco</a>
-    </nav>
-  </header>
+      <!-- Navegação principal -->
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="adm.html">Adm</a>
+        <a href="products.html">Catálogo</a>
+        <a href="sobreNos.html">Sobre Nós</a>
+        <a href="falaConosco.html">Fale Conosco</a>
+      </nav>
+    </header>
 
-  <main class="product main-content container">
-    <div class="product text-container">
-      <h2 class="main-text">Checkout</h2>
-      <p>Verifique os itens do carrinho e finalize agora</p>
-    </div>
-
-    <section class="product text-container">
-      <div id="billing">
-        <div class="grid_col_1">
-          <form action="">
-            <h2>Seus Dados:</h2>
-            <div class="form-fields">
-              <Div class="form-field">
-                <label for="e-mail">E-mail</label>
-                <input type="e-mail" name="e-mail" id="e-mail" placeholder="e-mail">
-              </Div>
-              <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="name">Nome</label>
-                  <input type="text" name="name" id="name" placeholder="Nome">
-                </Div>
-                <Div class="form-field">
-                  <label for="Sobrenome">Sobrenome</label>
-                  <input type="text" name="surname" id="surname" placeholder="Sobrenome">
-                </Div>
-              </div>
-
-              <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="phone">Telefone</label>
-                  <input type="text" name="phone" id="phone" placeholder="Telefone com DDD">
-                </Div>
-                <Div class="form-field">
-                  <label for="CPF">CPF</label>
-                  <input type="text" name="CPF" id="CPF" placeholder="CPF">
-                </Div>
-              </div>
-              <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="address">Logradouro</label>
-                  <input type="text" name="address" id="address" placeholder="Logradouro">
-                </Div>
-                <Div class="form-field cep">
-                  <label for="zip">CEP</label>
-                  <input type="text" name="zip" id="zip" placeholder="CEP">
-                </Div>
-              </div>
-
-
-              <div class="form-group container-flex">
-                <Div class="form-field">
-                  <label for="address">Nº</label>
-                  <input type="text" name="number" id="number" placeholder="Nº">
-                </Div>
-                <Div class="form-field">
-                  <label for="address_2">Complemento</label>
-                  <input type="address_2" name="address_2" id="address_2" placeholder="Complemento">
-                </Div>
-                <Div class="form-field">
-                  <label for="neighborhood">Bairro</label>
-                  <input type="text" name="neighborhood" id="neighborhood" placeholder="Bairro">
-                </div>
-              </div>
-
-              <div class="form-group container-flex">
-
+    <!-- Conteúdo principal -->
+    <main class="product main-content container">
+      <section class="product text-container">
+        <!-- Formulário de dados do usuário -->
+        <div id="billing">
+          <div class="grid_col_1">
+            <form action="">
+              <h2>Insira seus Dados:</h2>
+              <div class="form-fields">
+                <!-- Campo de e-mail -->
                 <div class="form-field">
-                  <label for="city">Cidade</label>
-                  <input type="text" name="city" id="city" placeholder="Cidade">
+                  <label for="e-mail">E-mail</label>
+                  <input type="email" name="e-mail" id="e-mail" placeholder="Digite seu e-mail" required />
                 </div>
-                <div class="form-field uf">
-                  <label for="state">Estado</label>
-                  <select id="estado" name="UF">
-                    <option value="" selected>Selecione...</option>
-                    <option value="AC">AC</option>
-                    <option value="AL">AL</option>
-                    <option value="AP">AP</option>
-                    <option value="AM">AM</option>
-                    <option value="BA">BA</option>
-                    <option value="CE">CE</option>
-                    <option value="DF">DF</option>
-                    <option value="ES">ES</option>
-                    <option value="GO">GO</option>
-                    <option value="MA">MA</option>
-                    <option value="MT">MT</option>
-                    <option value="MS">MS</option>
-                    <option value="MG">MG</option>
-                    <option value="PA">PA</option>
-                    <option value="PB">PB</option>
-                    <option value="PR">PR</option>
-                    <option value="PE">PE</option>
-                    <option value="PI">PI</option>
-                    <option value="RJ">RJ</option>
-                    <option value="RN">RN</option>
-                    <option value="RS">RS</option>
-                    <option value="RO">RO</option>
-                    <option value="RR">RR</option>
-                    <option value="SC">SC</option>
-                    <option value="SP">SP</option>
-                    <option value="SE">SE</option>
-                    <option value="TO">TO</option>
-                  </select>
+
+                <!-- Campos de nome e sobrenome -->
+                <div class="form-group container-flex">
+                  <div class="form-field">
+                    <label for="name">Nome</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required />
+                  </div>
+                  <div class="form-field">
+                    <label for="surname">Sobrenome</label>
+                    <input type="text" name="surname" id="surname" placeholder="Digite seu sobrenome" required />
+                  </div>
                 </div>
+
+                <!-- Campo de telefone -->
+                <div class="form-group container-flex">
+                  <div class="form-field">
+                    <label for="phone">Telefone</label>
+                    <input type="tel" name="phone" id="phone" placeholder="Digite seu telefone com DDD" required />
+                  </div>
+                </div>
+
+                <!-- Botão de envio -->
+                <button class="btnEnviar" type="submit">Enviar</button>
               </div>
-            </div>
-          </form>
-        </div>
-
-        <div class="grid_col_2">
-
-          <div class="total_container container-flex column">
-            <div class="total container-flex">
-              <h3>SUBTOTAL</h3>
-              <H3 id="subtotal">R$ 0.00</H3>
-            </div>
-            <div class="total container-flex">
-              <h3>Frete</h3>
-              <H3 id="frete">R$ 0.00</H3>
-            </div>
-            <div class="total container-flex">
-              <h3>Total</h3>
-              <H3 id="totalCarrinho">R$ 0.00</H3>
-            </div>
-
+            </form>
           </div>
-
-          <button class="button checkout_btn">Finalizar</button>
-          <form class="container-flex">
-            <div class="pay-method">
-              <input type="radio" name="pagamento" id="credito" checked><label for="credito">Crédito</label>
-            </div>
-            <div class="pay-method">
-              <input type="radio" name="pagamento" id="debito"><label for="debito">Débito</label>
-            </div>
-            <div class="pay-method">
-              <input type="radio" name="pagamento" id="pix"><label for="pix">PIX</label>
-            </div>
-            <div class="pay-method">
-              <input type="radio" name="pagamento" id="bol"><label for="bol">Boleto</label>
-            </div>
-          </form>
-          <form class="payment">
-            <div class="form-field">
-              <label for="nome_cartao">Nome no Cartão:</label>
-              <input type="text" id="nome_cartao" name="nome_cartao" required>
-            </div>
-
-            <div class="form-field">
-              <label for="numero_cartao">Número do Cartão:</label>
-              <input type="text" id="numero_cartao" name="numero_cartao" maxlength="16" required>
-            </div>
-
-            <div class="card-info">
-              <div class="form-field val">
-                <label for="validade_cartao">Validade:</label>
-                <input type="text" id="validade_cartao" name="validade_cartao" placeholder="MM/AA" maxlength="5"
-                  required>
-              </div>
-
-              <div class="form-field cvv">
-                <label for="cvv">CVV:</label>
-                <input type="text" id="cvv" name="cvv" maxlength="3" required>
-              </div>
-            </div>
-          </form>
         </div>
-      </div>
-    </section>
-  </main>
+      </section>
+    </main>
 
-  <footer>
-    <div class="Infos">
-      <div class="InfoBox">     
-        <h2>Meios de Pagamento</h2>
-        <p>Parcelamos sua compra em até 48x sem juros em todos os cartões de crédito ou com até 5% de desconto à vista.</p>
-      </div>
-      <div class="InfoBox">
-        <h2>Nossos Contatos</h2>
-        <p>Cobertura em Todo o Território Nacional! Não importa onde você esteja.</p>
-        <p>(19)99999-9999</p>
-      </div>
-      <div class="InfoBox">
-        <h2>Atendimento</h2>
-        <p>Loja física Aberta das 08:00 às 20:00 Segunda a Sexta</p>
-        <p>(19)99999-9999</p>
-      </div>
-    </div>
-
-    <div class="Footer">
-      <div class="FooterSection">
-          <h3>Institucional</h3>
-          <ul>
-            <li><a href="sobreNos.html">Sobre Nós</a></li>
-            <li><a href="sobreNos.html">Fale Conosco</a></li>
-            <li><a href="sobreNos.html">Política de Troca</a></li>
-            <li><a href="sobreNos.html">Política de Privacidade</a></li>
-            <li><a href="sobreNos.html">Política de Envio</a></li>
-          </ul>
-      </div>
-
-      <div class="FooterSection">
-          <h3>Ajuda</h3>
-          <ul>
-            <li><a href="sobreNos.html">FAQ</a></li>
-            <li><a href="sobreNos.html">Termos de Uso</a></li>
-            <li><a href="sobreNos.html">Suporte</a></li>
-          </ul>
-      </div>
-
-      <div class="FooterSection social">
-          <h3>Siga nossas redes sociais</h3>
-          <p>Acompanhe as novidades pelas nossas redes sociais</p>
-          <div class="social-icons">
-              <img src="images/facebook.png" alt="Facebook">
-              <img src="images/instagram.png" alt="Instagram">
-              <img src="images/whatsapp.png" alt="TikTok">
+    <!-- Rodapé do site -->
+    <footer>
+      <div class="Infos">
+          <!-- Meios de pagamento -->
+          <div class="InfoBox">
+              <h2>Meios de Pagamento</h2>
+              <p>Parcelamos sua compra em até 48x sem juros em todos os cartões de crédito ou com até 5% de desconto à vista.</p>
+          </div>
+    
+          <!-- Contatos da empresa -->
+          <div class="InfoBox">
+              <h2>Nossos Contatos</h2>
+              <p>Cobertura em Todo o Território Nacional! Não importa onde você esteja.</p>
+              <p>(19) 97100-1811</p>
+          </div>
+    
+          <!-- Horários de atendimento -->
+          <div class="InfoBox">
+              <h2>Atendimento</h2>
+              <p>Loja física Aberta das 08:00 às 20:00 Segunda a Sexta</p>
+              <p>(19) 3325-2184</p>
           </div>
       </div>
-  </div>
 
-    <div class="DireitosReservados">
-      <p>© Campinas, SP - 2024 Leonardo Albergoni Viana - Todos os direitos reservados.</p>
-    </div>
+      <div class="Footer">
+          <!-- Links institucionais -->
+          <div class="FooterSection">
+              <h3>Institucional</h3>
+              <ul>
+                  <li><a href="sobreNos.html">Sobre Nós</a></li>
+                  <li><a href="falaConosco.html">Fale Conosco</a></li>
+                  <li><a href="politicas.html">Política de Troca</a></li>
+                  <li><a href="privacidade.html">Política de Privacidade</a></li>
+                  <li><a href="envio.html">Política de Envio</a></li>
+              </ul>
+          </div>
+
+          <!-- Links de ajuda -->
+          <div class="FooterSection">
+              <h3>Ajuda</h3>
+              <ul>
+                  <li><a href="faq.html">FAQ</a></li>
+                  <li><a href="termos.html">Termos de Uso</a></li>
+                  <li><a href="suporte.html">Suporte</a></li>
+              </ul>
+          </div>
+
+          <!-- Redes sociais -->
+          <div class="FooterSection social">
+              <h3>Siga nossas redes sociais</h3>
+              <p>Acompanhe as novidades pelas nossas redes sociais</p>
+              <div class="social-icons">
+                  <a href="https://www.facebook.com/belaiveiculos01/?locale=pt_BR" target="_blank"><img src="images/facebook.png" alt="Facebook" /></a>
+                  <a href="https://www.instagram.com/belaiveiculos/" target="_blank"><img src="images/instagram.png" alt="Instagram" /></a>
+                  <a href="https://api.whatsapp.com/send/?phone=5519971001811&text=Ol%C3%A1+estou+navegando+no+site+e+gostaria+de+tirar+uma+d%C3%BAvida...&type=phone_number&app_absent=0" target="_blank"><img src="images/whatsapp.png" alt="WhatsApp" /></a>
+              </div>
+          </div>
+      </div>
+
+      <!-- Direitos reservados -->
+      <div class="DireitosReservados">
+          <p>© Campinas, SP - 2024 Leonardo Albergoni Viana - Todos os direitos reservados.</p>
+      </div>
   </footer>
-</body>
+  </body>
 </html>
