@@ -28,7 +28,7 @@ export function loadProducts(products, section) {
      
         card.innerHTML = `
           <div>
-            <img id="${produto.id}" src="${produto.imgProduto}" alt="${produto.tituloProduto}" width="168px" />
+            <img id="${produto.id}" src="http://localhost:8000/${produto.imgProduto}" alt="${produto.tituloProduto}" width="168px" />
           </div>
           <div class="product-card-info-container">
             <h2 class="product-card-title" title="${produto.tituloProduto}">${produto.tituloProduto}</h2>
@@ -37,8 +37,7 @@ export function loadProducts(products, section) {
             <h4 class="product-card-installment">10x of R$${valParcela} interest-free</h4>
           </div>
           <div class="cart-e-compra">
-            <button id="${produto.id}" class="product-card-btn">PURCHASE</button>
-            <button class="product-card-btn-cart" data-id="${produto.id}"><i class="bi bi-cart"></i></button>
+            <button id="${produto.id}" class="product-card-btn">Comprar</button>
           </div>`;
        
         card.querySelector('.product-card-btn').addEventListener('click', () => {

@@ -28,7 +28,7 @@ export function loadProducts(products, section) {
      
         card.innerHTML = `
           <div>
-            <img id="${produto.id}" src="${produto.imgProduto}" alt="${produto.tituloProduto}" width="168px" />
+            <img id="${produto.id}" src="http://localhost:8000/${produto.imgProduto}" alt="${produto.tituloProduto}" width="168px" />
           </div>
           <div class="product-card-info-container">
             <h2 class="product-card-title" title="${produto.tituloProduto}">${produto.tituloProduto}</h2>
